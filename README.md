@@ -78,6 +78,21 @@ This will:
 - Launch the game server with development settings
 - Open the game in your default browser (to disable this behavior, set `SKIP_BROWSER_OPEN=true` in your environment)
 
+### GitHub Codespaces / GitHub Space
+
+To play from a GitHub-hosted space (Codespaces), run:
+
+```bash
+npm run dev:space
+```
+
+Then open port `9000` in the **Ports** panel and set its visibility to **Public** (or use the auto-forwarded browser tab).
+This mode:
+
+- binds Vite to all interfaces so the forwarded Codespaces URL can reach it
+- disables local browser auto-open inside the container
+- runs both client and server so lobbies and matches work
+
 ### Client Only
 
 To run just the client with hot reloading:

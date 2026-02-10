@@ -20,7 +20,8 @@
     "lint:fix": "eslint --fix",
     "prepare": "husky",
     "gen-maps": "cd map-generator && go run . && npm run format",
-    "inst": "npm ci --ignore-scripts"
+    "inst": "npm ci --ignore-scripts",
+    "dev:space": "cross-env GAME_ENV=dev SKIP_BROWSER_OPEN=true concurrently \"npm run start:client -- --host\" \"npm run start:server-dev\""
   },
   "lint-staged": {
     "**/*": [

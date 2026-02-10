@@ -106,6 +106,8 @@ export default defineConfig(({ mode }) => {
     },
 
     server: {
+      // Required for GitHub Codespaces/remote browser access.
+      host: true,
       port: 9000,
       // Automatically open the browser when the server starts
       open: process.env.SKIP_BROWSER_OPEN !== "true",
