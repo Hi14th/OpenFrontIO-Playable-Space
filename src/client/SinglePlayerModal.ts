@@ -918,12 +918,12 @@ export class SinglePlayerModal extends BaseModal {
             players: [
               {
                 clientID,
-                username: usernameInput.getCurrentUsername(),
+                username: usernameInput?.getCurrentUsername() ?? "Player",
                 cosmetics: {
                   flag:
-                    flagInput.getCurrentFlag() === "xx"
+                    (flagInput?.getCurrentFlag() ?? "xx") === "xx"
                       ? ""
-                      : flagInput.getCurrentFlag(),
+                      : (flagInput?.getCurrentFlag() ?? ""),
                   pattern: selectedPattern ?? undefined,
                   color: selectedColor ? { color: selectedColor } : undefined,
                 },
