@@ -58,8 +58,8 @@
 
     <!-- Injected from Server env -->
     <script>
-      window.GIT_COMMIT = <%- gitCommit %>;
-      window.INSTANCE_ID = <%- instanceId %>;
+      window.GIT_COMMIT = "main";
+      window.INSTANCE_ID = "github-pages";
     </script>
 
     <!-- CrazyGames SDK -->
@@ -363,7 +363,7 @@
       src="https://static.cloudflareinsights.com/beacon.min.js"
       data-cf-beacon='{"token": "03d93e6fefb349c28ee69b408fa25a13"}'
     ></script>
-    <script type="module" src="/src/client/Main.ts"></script>
+    <script type="module" src="src/client/Main.ts"></script>
     <footer>
       <script
         data-cfasync="false"
