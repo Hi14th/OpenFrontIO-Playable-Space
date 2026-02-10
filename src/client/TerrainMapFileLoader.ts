@@ -1,6 +1,6 @@
 import { FetchGameMapLoader } from "../core/game/FetchGameMapLoader";
 
 export const terrainMapFileLoader = new FetchGameMapLoader(
-  `/maps`,
+  `maps`,
   window.GIT_COMMIT,
 );
