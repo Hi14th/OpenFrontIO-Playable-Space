@@ -39,7 +39,7 @@ export default defineConfig(({ mode }) => {
       setupFiles: "./tests/setup.ts",
     },
     root: "./",
-    base: "/",
+    base: "./",
     publicDir: "resources", // Access static assets via import or explicit copy
 
     resolve: {

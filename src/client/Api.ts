@@ -136,6 +136,10 @@ export function getApiBase() {
     return localStorage.getItem("apiHost") ?? "http://localhost:8787";
   }
 
+  if (domainname === "github.io" || !domainname.includes("openfront")) {
+    return "https://api.openfront.io";
+  }
+
   return `https://api.${domainname}`;
 }
 
